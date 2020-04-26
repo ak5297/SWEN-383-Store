@@ -1,8 +1,8 @@
 package RegionalControlComputer;
 
-public class CreditCard implements Payment {
+public class CreditCard extends Payment {
 
-    public CreditCard(){
+    public CreditCard() {
         
     }
 }

@@ -1,6 +1,6 @@
 package RegionalControlComputer;
 
-public class DebitCard implements Payment {
+public class DebitCard extends Payment {
 
 
 }
