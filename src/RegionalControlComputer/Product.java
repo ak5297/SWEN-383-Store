@@ -39,7 +39,8 @@ public class Product {
     public Boolean rentalStatus(){
         if(rentedStatus == true) {
             System.out.println("This item is rented out.");
-        } // else if(rentedStatus == false) {
+        } 
+        // else if(rentedStatus == false) {
 //             System.out.println("This item is not rented out.");
 //         } if(returnedStatus == true) {
 //             System.out.println("This item is returned.");
@@ -50,6 +51,7 @@ public class Product {
 //         } else if(reservationStatus == false) {
 //             System.out.println("This item is not reserved.");
 //         }  
+           System.out.println("This item is not rented out.");
            return false;            
     }
 }
