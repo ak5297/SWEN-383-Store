@@ -25,16 +25,14 @@ public class Product {
     }
     
     //display alert message
-    public String alertMessage(String storeID, String dvdID, int quantity){
-        String message = "Store ID: " + storeID + "DVD/CD ID: " + dvdID + "Quantity: " + quantity;
-        return alertMessage(storeID, dvdID, quantity);
+    public String alertMessage(){
+        return "Store ID: " + storeID + "DVD/CD ID: " + dvdID + "Quantity: " + quantity;
     }
     
     //display log entry
     public String logEntity(){
-        System.out.println("Store ID: " + storeID + "Customer ID: " + customerID + "DVD/CD ID: " + dvdID
-        + "Return Date: " + returnDate + "Renting Date: " + rentDate);
-        return storeID;
+        return "Store ID: " + storeID + "Customer ID: " + customerID + "DVD/CD ID: " + dvdID + "Return Date: " + returnDate + "Renting Date: " + rentDate;
+       
     }
     
     //check rental, returned, and reservation status
