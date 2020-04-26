@@ -14,12 +14,18 @@ class Payment {
     }
 
     //accessor for payment
-    public double getPayment() {
+    public double getAmount() {
     return amount;
     }
     
     //mutator for payment
-    public void setPayment(double paymentAmount) {
+    public void setAmount(double paymentAmount) {
         amount = paymentAmount;
     }
+
+    public String submitPayment() {
+        return "Payment submitted";
+    }
+
+
 }
