@@ -8,7 +8,7 @@ class Payment {
         amount=0.0;
     }
     
-    //
+    //Zach
     public Payment(double paymentAmount) {
         amount = paymentAmount;
     }
