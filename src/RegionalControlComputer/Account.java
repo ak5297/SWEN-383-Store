@@ -3,13 +3,11 @@ package RegionalControlComputer;
 //define all variables and methods to be implemented
 public interface Account {
 
-    final int UID = 49251;
+    public void createAccount();
 
-    void createAccount(int UID);
-
-    void login(int ID);
+    public void login(int ID);
     
-    void checkCredentials(int ID);
+    public void checkCredentials(int ID);
     
-    void updateAccount();
+    public void updateAccount();
 }
