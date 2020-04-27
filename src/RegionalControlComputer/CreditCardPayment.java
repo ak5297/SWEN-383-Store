@@ -8,7 +8,7 @@ public class CreditCardPayment extends Payment {
 
     public Boolean authorizeCreditCardPayment(String creditCardNum) {
         // Reach out to bank and confirm valid card
-        if (creditCardNum == "1234-5678-9012-3456") {
+        if (creditCardNum == cardNo) {
             System.out.println("Credit card verified");
             return true;
         } else {

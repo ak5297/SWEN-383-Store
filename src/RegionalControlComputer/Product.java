@@ -1,5 +1,5 @@
 package RegionalControlComputer;
-
+import java.util.Scanner;
 public class Product {
     private String title;
     private String uniqueId;
