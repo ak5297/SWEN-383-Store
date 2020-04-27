@@ -1,7 +1,7 @@
 package RegionalControlComputer;
 
 public class DebitCardPayment extends Payment {
-
+   private String cardNo;
     public Boolean authorizeDebitCardPayment(String debitCardNum) {
         // Reach out to bank and confirm valid card
         if (debitCardNum == cardNo) {
