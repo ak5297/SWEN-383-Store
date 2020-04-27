@@ -26,7 +26,7 @@ public class Customer implements Account {
           System.out.println("Please enter your CC Information.");
           while(!sc.hasNext()){
           //checks for valid input
-            System.out.println("That isn't a valid card number.");
+            System.out.println("That isn't a valid credit card number.");
             sc.next();
           }
           CC = sc.nextLine();
