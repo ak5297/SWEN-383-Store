@@ -9,7 +9,7 @@ public class Customer implements Account {
     String email = "";
     String address = "";
     
-    public void createAccount() {
+    public void createCustomerAccount() {
        //get user input of full name
        do{
           System.out.println("Please enter your full name.");
