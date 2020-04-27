@@ -1,7 +1,7 @@
 package RegionalControlComputer;
 
 public class CreditCardPayment extends Payment {
-
+   private String cardNo;
     public CreditCardPayment() {
         
     }

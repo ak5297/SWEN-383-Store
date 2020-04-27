@@ -1,27 +1,43 @@
 package RegionalControlComputer;
+import java.util.Scanner;
 
 public class RCCTester {
     //main method
     public static void main(String[] args) {
 
-        CreditCardPayment creditOne = new CreditCardPayment();
+      Scanner scanner = new Scanner(System.in);      
+      String cardType;
+      String nameOnCard;
+      int expMonth;
+      int expDay;
+      String cardNo;
+      String cardStatus;
+      
 
-        creditOne.submitPayment("1234-5678-9012-3456");
-//        Payment cash = new CashPayment();
-//        Payment credit = new CreditCardPayment(0.0, "name", "expDate", "cardNum");
-//        Payment debit = new DebitCardPayment(0.0, "name", "expDate", "cardNum");
-//
-//        System.out.println("Cash details:");
-//        cash.paymentDetails();
-//        System.out.println();
-//
-//        System.out.println("Credit Card details:");
-//        credit.paymentDetails();
-//        System.out.println();
-//
-//        System.out.println("Debit details:");
-//        debit.paymentDetails();
-//        System.out.println();
+        System.out.print("Debit or Credit Card? ");
+        cardType = scanner.nextLine();
+        System.out.print("Name on Card: ");
+        nameOnCard = scanner.nextLine();
+        System.out.print("Expiration Month of Card: ");
+        expMonth = scanner.nextInt();
+        System.out.print("Expiration Day of Card: ");
+        expDay = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Card Number: ");
+        cardNo = scanner.nextLine();
+        System.out.print("Getting charged on Checking or Savings? ");
+        scanner.nextLine();
+        if(cardType == "Credit") {
+            //card.authorizeDebitCardPayment(cardNo);
+            System.out.println("Set as Credit");
+        }
+        else if(cardType == "Debit"){
+            //card.authorizeCreditCardPayment(cardNo);
+             System.out.println("Set as Debit");
+        }
+        else{
+            System.out.println("Credit Card not approved");
+        }
     }
 
 }
